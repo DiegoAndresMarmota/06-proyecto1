@@ -56,9 +56,11 @@ function App() {
                     <input type="text" />
                     <button>Buscar</button>
                 </form>
-            </div>
+        </div>
+        
             <div className="add">
-                <h3 className="title">Añadir recetas</h3>
+          <h3 className="title">Añadir recetas</h3>
+          
                 <form>
                     <input type="text" placeholder="Titulo" />
                     <textarea placeholder="descripcion"></textarea>

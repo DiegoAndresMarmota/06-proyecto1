@@ -134,15 +134,15 @@ input[type="button"]{
     transition: all 300ms;
 } 
 
-.peli-item .edit{
+.receta-item .edit{
     margin-right: 7px;
 }
 
-.peli-item .edit:hover{
+.receta-item .edit:hover{
     background: rgb(235, 137, 10);
 }
 
-.peli-item .delete:hover{
+.receta-item .delete:hover{
     background: rgb(221, 8, 8);
 }
 
