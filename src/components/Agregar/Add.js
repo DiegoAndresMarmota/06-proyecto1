@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { GuardarEnStorage } from '../helpers/GuardarEnStorage';
 
 export const Add = () => {
     //1. Agregar propiedad del propio componente
@@ -30,33 +31,10 @@ export const Add = () => {
         setRecetaState(receta);
 
         //12. Guardar en el amacenamiento local
-        guardarEnStorage(receta);
+        GuardarEnStorage("recetas", receta);
         
     }
 
-    const guardarEnStorage = receta => { 
-        
-        //13. Conseguir los elementos que ya tenemos en el locaStorage;
-        let elementos = JSON.parse(localStorage.getItem("recetas"));
-
-        //14. Comprobar si es un array
-        if (Array.isArray(elementos)){
-            //14a. Añadir dentro del array un elemento nuevo
-            elementos.push(receta);
-        } else {
-            //14b. Crear un array con la nueva receta
-            elementos = [receta];
-        }
-        //15. Guardar en el localstorage
-        localStorage.getItem("Recetas", JSON.stringify(elementos));
-         
-        //11. Guardar en el almacenamiento local
-        //17. Guardar datos en un JSON string
-        localStorage.setItem('recetas', JSON.stringify([receta]));
-    
-        //16. Devolver el objeto guardado
-        return receta;
-    }
 
     return (
         <div className="add">

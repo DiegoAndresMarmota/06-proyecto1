@@ -2,8 +2,8 @@ import { Add } from "./components/Agregar/Add";
 import { Buscador } from "./components/Buscador/Buscador";
 import { Titulo } from "./components/Cabecera/Titulo";
 import { Listado } from "./components/Listado/Listado";
-import { Navegacion } from "./components/Navegacion/Nav";
-import { PiePagina } from "./components/Pie/PiePagina";
+import { Navegacion } from "./components/navegacion/Nav";
+import { PiePagina } from "./components/pie/PiePagina";
 
 function App() {
     return (
