@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { GuardarEnStorage } from '../helpers/GuardarEnStorage';
 
-export const Add = () => {
+export const Add = (setListadoState) => {
     //1. Agregar propiedad del propio componente
     const titulo = "Añadir receta"
     //9. Guardar esta inforamcion en el estado del propio componente
@@ -29,10 +29,16 @@ export const Add = () => {
 
         //10. Guardar estado
         setRecetaState(receta);
+     
+        //13. Actualizar el estado
+        setListadoState(elementos => {
+            return [...elementos, receta]
+        });
 
         //12. Guardar en el amacenamiento local
         GuardarEnStorage("recetas", receta);
         
+
     }
 
 
