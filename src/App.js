@@ -1,7 +1,7 @@
-import { Add } from "./components/Agregar/Add";
-import { Buscador } from "./components/Buscador/Buscador";
-import { Titulo } from "./components/Cabecera/Titulo";
-import { Listado } from "./components/Listado/Listado";
+import { Add } from "./components/agregar/Add";
+import { Buscador } from "./components/buscador/Buscador";
+import { Titulo } from "./components/cabecera/Titulo";
+import { Listado } from "./components/listado/Listado";
 import { Navegacion } from "./components/navegacion/Nav";
 import { PiePagina } from "./components/pie/PiePagina";
 
