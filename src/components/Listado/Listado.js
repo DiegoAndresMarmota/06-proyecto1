@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 
-export const Listado = (listadoState, setListadoState  => {
+export const Listado = ({ listadoState, setListadoState }) => {
 
-    const [listadoState, setListadoState] = useState([]);
+    //const [listadoState, setListadoState] = useState([]);
 
     useEffect(() => {
         conseguirRecetas();
@@ -32,4 +32,4 @@ export const Listado = (listadoState, setListadoState  => {
             }
         </>
     )
-})
+};
